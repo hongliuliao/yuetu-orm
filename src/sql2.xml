@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sql-mappings>
+	<!-- 根据书籍编号查询书籍 -->
+	<sql id='selectBooks2'>
+		select * 
+		from tb_book --书籍表
+		where book_id=? --这里可以填1
+	</sql>
+	<!-- 查询所有的书籍类型 -->
+	<sql id='selectBookTypes2'>
+		select type_id,type_name from book_type
+	</sql>
+	<include file='sql2.xml' />
+</sql-mappings>
